@@ -4,8 +4,8 @@ import { Code, Palette, Zap, Users } from "lucide-react"
 
 const About = () => {
   const skills = [
-    "UI/UX Design", "React", "TypeScript", "Figma", "Adobe Creative Suite",
-    "Tailwind CSS", "Node.js", "Python", "Design Systems", "Prototyping"
+    "HTML","CSS","JavaScript","UI/UX Design", "React", "TypeScript", "Figma", "MongoDB ",
+    "Tailwind CSS", "Node.js", "Python", "Express.js", "Vercel", "Locofy.ai" , "Figma" , "Bootstrap " , "Netlify" , ""
   ]
 
   const highlights = [
@@ -37,8 +37,11 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            I'm a passionate designer and developer with a love for creating exceptional digital experiences. 
-            With years of experience in both design and development, I bridge the gap between creativity and functionality.
+          🚀 I'm a passionate and curious Full Stack Developer in the making, with a strong focus on crafting clean, user-friendly, and responsive web applications.
+Currently diving deep into the MERN stack (MongoDB, Express.js, React.js, Node.js), I blend design and development skills to bring ideas to life—from modern UI prototypes to dynamic backend integrations.
+I enjoy turning complex problems into simple, beautiful, and intuitive solutions. Whether it's designing pixel-perfect interfaces or building RESTful APIs, I thrive in both frontend and backend challenges.
+Always eager to learn, grow, and contribute to meaningful tech projects.
+
           </p>
         </div>
 
@@ -47,9 +50,13 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-6">My Journey</h3>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Started as a designer, evolved into a full-stack developer. I believe great products 
-              come from understanding both the technical possibilities and user needs. My approach 
-              combines aesthetic sensibility with practical problem-solving.
+            My journey in tech started with curiosity and a deep passion for building things that solve real-world problems.
+             After completing my Diploma in Computer Engineering with a strong academic score of 84.71%, I decided to take a bold step forward in my learning path by entering the world of web development.
+I began learning the MERN stack (MongoDB, Express.js, React.js, Node.js) with the goal of becoming a full-stack developer. I dedicated daily time to mastering frontend frameworks like React, understanding backend logic with Node.js and Express, and building clean, responsive UIs using Tailwind CSS and Figma.
+In parallel. Tools like GitHub, Locofy.ai, and XAMPP became part of my daily workflow as I turned static designs into dynamic applications.
+working on real-world projects, and preparing to become industry-ready—driven by consistency, curiosity, and a hunger to learn.
+ Every line of code I write takes me one step closer to my dream of becoming a confident and impactful developer.
+
             </p>
             
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">

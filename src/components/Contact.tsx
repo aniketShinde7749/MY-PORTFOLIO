@@ -6,6 +6,8 @@ import { Label } from "@/components/ui/label"
 import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter } from "lucide-react"
 import { useState } from "react"
 import { useToast } from "@/hooks/use-toast"
+import emailjs from 'emailjs-com'
+
 
 const Contact = () => {
   const { toast } = useToast()
@@ -15,33 +17,56 @@ const Contact = () => {
     message: ''
   })
 
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   toast({
+  //     title: "Message sent!",
+  //     description: "Thank you for reaching out. I'll get back to you soon.",
+  //   })
+  //   setFormData({ name: '', email: '', message: '' })
+  // }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+  
+    emailjs.send(
+      'service_8wqju3d',       // Replace with your actual Service ID
+      'template_jqxfhek',      // Replace with your actual Template ID
+      formData,                // The form data
+      'TIVEohgms4M_6Nuk8'        // Replace with your Public Key
+    ).then(() => {
+      toast({
+        title: "Message sent!",
+        description: "Thank you for reaching out. I'll get back to you soon.",
+      })
+      setFormData({ name: '', email: '', message: '' })
+    }).catch((error) => {
+      toast({
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+      })
+      console.error(error)
     })
-    setFormData({ name: '', email: '', message: '' })
   }
 
   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "tomasz@example.com",
-      href: "mailto:tomasz@example.com"
+      value: "aniketshinde80242@gmail.com",
+      href: "mailto:aniketshinde80242@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 9767847749",
+      href: "tel:+9767847749"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
-      href: "#"
+      value: "India,Maharashta, Chatrapati Sambhajinagar",
+      href: "https://maps.app.goo.gl/MzmkRC6qEUvp7Koj8?g_st=aw"
     }
   ]
 

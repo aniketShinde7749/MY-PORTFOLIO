@@ -42,7 +42,7 @@ const Navigation = () => {
               isScrolled ? 'text-foreground' : 'text-white'
             }`}
           >
-            TG
+            AS
           </button>
 
           {/* Desktop Navigation */}

@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
+import { link } from "fs"
 
 const Portfolio = () => {
   const projects = [
@@ -21,12 +22,12 @@ const Portfolio = () => {
       github: "#",
       live: "#"
     },
-    {
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates, team collaboration, and project tracking features.",
-      tags: ["Next.js", "PostgreSQL", "Prisma", "Socket.io"],
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=80",
-      github: "#",
+     {
+       title: "PAYING GUEST WEBSITE",
+      description: "In this website have admin  and user panel , user can post property , book property and delete property this functionality is added in this website ,this platform specially created for paying guest",
+    tags: ["HTML", "CSS", "JavaScript", "PHP" , "mySQL" ,"Bootstrap"],
+     image: "#",
+     github: "#",
       live: "#"
     },
     {
@@ -37,14 +38,14 @@ const Portfolio = () => {
       github: "#",
       live: "#"
     },
-    {
-      title: "AI Dashboard",
-      description: "Analytics dashboard for AI-powered insights. Features data visualization, real-time metrics, and predictive analytics.",
-      tags: ["Vue.js", "D3.js", "Python", "Machine Learning"],
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-      github: "#",
-      live: "#"
-    },
+    // {
+    //   title: "AI Dashboard",
+    //   description: "Analytics dashboard for AI-powered insights. Features data visualization, real-time metrics, and predictive analytics.",
+    //   tags: ["Vue.js", "D3.js", "Python", "Machine Learning"],
+    //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    //   github: "#",
+    //   live: "#"
+    // },
     {
       title: "Brand Identity",
       description: "Complete brand identity design for a tech startup including logo, color palette, typography, and brand guidelines.",

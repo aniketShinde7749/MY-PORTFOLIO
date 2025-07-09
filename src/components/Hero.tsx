@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Download, Mail } from "lucide-react"
 import heroBg from "@/assets/hero-bg.jpg"
-import profileAvatar from "@/assets/profile-avatar.jpg"
+import profileAvatar from "@/assets/aniket.jpg"
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -33,7 +33,7 @@ const Hero = () => {
         
         {/* Name and Title */}
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
-          Tomasz Gajda
+          ANIKET SHINDE
         </h1>
         
         <p className="text-xl sm:text-2xl lg:text-3xl mb-8 text-white/90 animate-fade-in font-light">

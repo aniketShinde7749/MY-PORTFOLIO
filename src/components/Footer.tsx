@@ -4,8 +4,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
   
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/aniketShinde7749", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/aniket-shinde-8784b5298/", label: "LinkedIn" },
     { icon: Twitter, href: "https://twitter.com", label: "Twitter" }
   ]
 
@@ -23,7 +23,7 @@ const Footer = () => {
               onClick={scrollToTop}
               className="text-2xl font-bold text-foreground hover:text-primary transition-colors duration-200"
             >
-              Tomasz Gajda
+              ANIKET SHINDE
             </button>
             <p className="text-muted-foreground mt-2">
               Creative Designer & Developer
@@ -49,7 +49,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center md:text-right">
             <p className="text-muted-foreground text-sm flex items-center justify-center md:justify-end gap-1">
-              © {currentYear} Made with <Heart className="h-4 w-4 text-red-500" /> by Tomasz Gajda
+              © {currentYear} Made with <Heart className="h-4 w-4 text-red-500" /> by ANIKET SHINDE
             </p>
           </div>
         </div>
